@@ -6,7 +6,7 @@ tabla_sorok = []
 with open("vtabla.txt", "r", encoding="utf-8") as f:
     tabla_sorok = [[*line.strip()] for line in f.readlines()]
 
-a,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_ = zip(*tabla_sorok)
+a = [sor[0] for sor in tabla_sorok]
 
 print("1. feladat:")
 
