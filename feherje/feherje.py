@@ -31,7 +31,7 @@ with open("bsa.txt", "w", encoding="utf-8") as f:
 
 bsa_osszegkeplet = [0 for _ in range(5)]
 
-_, betuk, _, _, _, _, _, _ = zip(*aminosavak)
+betuk = [sor[1] for sor in aminosavak]
 
 for i in bsa:
     for j in range(5):
